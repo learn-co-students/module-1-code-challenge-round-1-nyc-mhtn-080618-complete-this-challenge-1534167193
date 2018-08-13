@@ -23,6 +23,7 @@ vins_review3 = Review.new(bob_build, vincents, "Okay", 3)
 
 bobby.add_review(m_noodle, "An open field Ned. A Dothraki horde in an open field!", 5)
 bobby2 = Customer.new("Bobby", "Baratheon")
+bob_build.add_review(m_noodle, "I can fix it", 1)
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
