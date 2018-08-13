@@ -1,4 +1,21 @@
 class Review
-  
-end
 
+  attr_accessor :rating, :content
+  attr_reader :customer, :restaurant
+  #allows for #customer, #restaurant (both unchangeable), #rating and #content instance methods
+
+  @@all = []
+
+  def initialize(customer, restaurant, rating, content)
+    @customer = customer
+    @restaurant = restaurant
+    @rating = rating
+    @content = content
+    @@all << self
+  end
+
+  def self.all
+    @@all
+  end
+
+end #END CLASS
