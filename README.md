@@ -7,6 +7,8 @@ For our purposes, a `Restaurant` has many `Reviews`, a `Customer` has many `Revi
 If you are not sketching out your domain, and thinking about single source of truth,
 you are doing it wrong :(
 
+# review is the join table!!!!
+
 ## Topics
 
 - Classes vs Instances
