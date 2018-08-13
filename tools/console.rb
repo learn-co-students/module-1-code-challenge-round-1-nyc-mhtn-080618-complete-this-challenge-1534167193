@@ -17,6 +17,7 @@ danis = Restaurant.new("Dani's House of Pizza")
 
 danis_review = Review.new(jesse, danis, "Amazing", 5)
 vins_review1 = Review.new(jesse, vincents,  "Okay", 3)
+vins_review4 = Review.new(jesse, vincents,  "The best", 5)
 vins_review2 = Review.new(bobby, vincents, "Awesome" , 4)
 vins_review3 = Review.new(bob_build, vincents, "Okay", 3)
 
