@@ -17,9 +17,9 @@ class Customer
   end # self.all
 
   def self.find_by_name(name)
-    @@all.select do |customer|
+    @@all.find do |customer|
       customer.full_name == name
-    end # all.select
+    end # all.find
   end # self.find_by_name
 
   def self.find_all_by_first_name(name)
@@ -52,7 +52,7 @@ class Customer
   def restaurants
     reviews.map do |review|
       review.restaurant
-    end.uniq # reviews.map 
+    end.uniq # reviews.map
   end # restaurants
 
 end # class Customer
