@@ -24,8 +24,8 @@ class Customer
   def self.find_by_name(name)
     first_name = name.split[0]
     last_name = name.split[1]
-    @@all.find do |full_name|
-      full_name.first_name== first_name && full_name.last_name ==last_name
+    @@all.find do |customer|
+      customer.first_name== first_name && customer.last_name ==last_name
     end
   end
 
@@ -33,16 +33,16 @@ class Customer
   #- given a string of a first name, returns an **array** containing all customers with that first name
 
   def self.find_all_by_first_name(name)
-    @@all.select do |full_name|
-      full_name.first_name == name
+    @@all.select do |customer|
+      customer.first_name == name
     end
   end
 
 ##  `Customer.all_names`
   # - should return an **array** of all of the customer full names
   def self.all_names
-    @@all.map do |full_name|
-      full_name.full_name
+    @@all.map do |customer|
+      customer.full_name
     end
   end
 

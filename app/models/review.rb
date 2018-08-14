@@ -15,14 +15,7 @@ class Review
   def self.all
     @@all
   end
-  #- `Review#customer`
-  #  - returns the customer object for that given review
-  #  - Once a review is created, I should not be able to change the author
-  #self.customer
 
-#  `Review#restaurant`
-  #  - returns the restaurant object for that given review
-  #  - Once a review is created, I should not be able to change the restaurant
 
 
 end
